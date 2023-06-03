@@ -7,7 +7,7 @@ import sklearn
 df = pd.read_csv("data.csv")
 forest = open('power.pkl','rb')
 model = pickle.load(forest)
-st.title(':green[ELECTRICITY GENERATION PREDICTOR]')
+st.title(':orange[ELECTRICITY GENERATION PREDICTOR]')
 view = ['STANDARD PARAMETERS','PREDICTION PARAMETERS']
 select = st.selectbox('Select Parameters',view)
 if select == 'STANDARD PARAMETERS':
