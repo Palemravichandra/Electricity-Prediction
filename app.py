@@ -8,8 +8,8 @@ df = pd.read_csv("data.csv")
 forest = open('power.pkl','rb')
 model = pickle.load(forest)
 st.title(':orange[POWER OUTPUT PREDICTION APP]')
-view = ['STANDARD PARAMETERS','PREDICTION PARAMETERS']
-select = st.selectbox('Select Parameters',view)
+#view = ['STANDARD PARAMETERS','PREDICTION PARAMETERS']
+select = st.radio('Select Parameters:',['STANDARD PARAMETERS','PREDICTION PARAMETERS'],horizantal=True)
 if select == 'STANDARD PARAMETERS':
     col1,col2,col3=st.columns(3)
     with col1:
