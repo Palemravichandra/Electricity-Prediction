@@ -14,7 +14,7 @@ if select == 'STANDARD PARAMETERS':
     col1,col2=st.columns(2)
     with col1:
         st.subheader(':violet[TEMPERATURE]')
-        Temp = st.selectbox('Select Temperature',df['temp'].unique())
+        Temp = st.selectbox('Select Temperature',df['Temp'].unique())
         st.text(" ")
         st.subheader(':violet[VACUUM]')
         Vacuum = st.selectbox('Select Vacuum',df['Vacuum'].unique())
