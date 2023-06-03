@@ -46,37 +46,37 @@ else:
         st.subheader(':violet[TEMP]')
         Temp = st.text_input('Enter Temperature')
         if Temp:
-            Temp=int(Temp)
+            Temp=float(Temp)
         st.text(" ")
         st.subheader(':violet[VACUUM]')
         Vacuum = st.text_input('Enter Vacuum')
         if Vacuum:
-            Vacuum=int(Vacuum)
+            Vacuum=float(Vacuum)
         st.text(" ")
         st.subheader(':violet[PRESSURE]')
         Pressure = st.text_input('Enter Pressure')
         if Pressure:
-            Pressure=int(Pressure)
+            Pressure=float(Pressure)
     with col2:
         st.subheader(':violet[HUMIDITY]')
         Humidity = st.text_input('Enter Humidity')
         if Humidity:
-            Humidity=int(Humidity)
+            Humidity=float(Humidity)
 
         st.subheader(':violet[TEMP-DIFF]')
         TempDiff = st.text_input('Enter Temperature Difference')
         if TempDiff:
-            TempDiff=int(TempDiff)
+            TempDiff=float(TempDiff)
         #st.text(" ")
         st.subheader(':violet[PRESSURE-DIFF]')
         PressureDiff = st.text_input('Enter Pressure Difference')
         if PressureDiff:
-            PressureDiff=int(PressureDiff)
+            PressureDiff=float(PressureDiff)
     with col3:
         st.subheader(':violet[POWER-PER-FUEL]')
         PowerPerFuel = st.text_input('Enter Power Per Fuel')
         if PowerPerFuel:
-            PowerPerFuel=int(PowerPerFuel)
+            PowerPerFuel=float(PowerPerFuel)
         st.text(" ")
         st.text(" ")
         st.text(' ')
