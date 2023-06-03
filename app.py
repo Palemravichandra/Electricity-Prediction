@@ -11,7 +11,7 @@ st.title(':orange[ELECTRICITY GENERATION PREDICTOR]')
 view = ['STANDARD PARAMETERS','PREDICTION PARAMETERS']
 select = st.selectbox('Select Parameters',view)
 if select == 'STANDARD PARAMETERS':
-    col1,col2,col3=st.columns(3)
+    col1,col2=st.columns(2)
     with col1:
         st.subheader(':violet[TEMPERATURE]')
         Temp = st.selectbox('Select Temperature',df['Temp'].unique())
@@ -21,15 +21,14 @@ if select == 'STANDARD PARAMETERS':
         #st.text(" ")
         st.subheader(':violet[PRESSURE]')
         Pressure = st.selectbox('Select Pressure',df['Pressure'].unique())
-    with col2:
         st.subheader(':violet[HUMIDITY]')
         Humidity = st.selectbox('Select Humidity',df['Humidity'].unique())
+    with col2:
         st.subheader(':violet[TEMPERATURE DIFFERENCE]')
         TempDiff = st.selectbox('Select Temperature Difference',df['TempDiff'].unique())
         #st.text(" ")
         st.subheader(':violet[PRESSURE DIFFERENCE]')
         PressureDiff = st.selectbox('Select Pressure Difference',df['PressureDiff'].unique())
-    with col3:
         st.subheader(':violet[POWER PER FUEL]')
         PowerPerFuel = st.selectbox('Select Power Per Fuel',df['PowerPerFuel'].unique())
         st.text(" ")
