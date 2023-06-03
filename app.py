@@ -9,7 +9,7 @@ forest = open('power.pkl','rb')
 model = pickle.load(forest)
 st.title(':green[ELECTRICITY GENERATION PREDICTOR]')
 view = ['STANDARD PARAMETERS','PREDICTION PARAMETERS']
-select = st.radio('Select Parameters',view)
+select = st.radio('Select Parameters',view,horizantal=True)
 if select == 'STANDARD PARAMETERS':
     col1,col2=st.columns(2)
     with col1:
@@ -29,7 +29,7 @@ if select == 'STANDARD PARAMETERS':
         TempDiff = st.selectbox('Select Temperature Difference',df['TempDiff'].unique())
         st.text(" ")
         st.subheader(':violet[PRESSURE DIFFERENCE]')
-        PressureDiff = st.selctbox('Select Pressure Difference',df['PressureDiff'].unique())
+        PressureDiff = st.selectbox('Select Pressure Difference',df['PressureDiff'].unique())
         st.text(" ")
         st.subheader(':violet[POWER PER FUEL]')
         PowerPerFuel = st.selectbox('Select Power Per Fuel',df['PowerPerFuel'].unique())
