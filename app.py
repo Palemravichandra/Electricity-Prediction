@@ -24,7 +24,7 @@ if select == 'STANDARD PARAMETERS':
         st.subheader(':violet[HUMIDITY]')
         Humidity = st.selectbox('Select Humidity',df['Humidity'].unique())
     with col2:
-        st.text(':violet[TEMPERATURE DIFFERENCE]')
+        st.subheader(':violet[TEMPERATURE DIFFERENCE]')
         TempDiff = st.selectbox('Select Temperature Difference',df['TempDiff'].unique())
         #st.text(" ")
         st.subheader(':violet[PRESSURE DIFFERENCE]')
