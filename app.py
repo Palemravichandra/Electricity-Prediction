@@ -9,7 +9,7 @@ forest = open('power.pkl','rb')
 model = pickle.load(forest)
 st.title(':green[ELECTRICITY GENERATION PREDICTOR]')
 view = ['STANDARD PARAMETERS','PREDICTION PARAMETERS']
-select = st.radio('Select Parameters',view,horizantal=True)
+select = st.selectbox('Select Parameters',view)
 if select == 'STANDARD PARAMETERS':
     col1,col2=st.columns(2)
     with col1:
