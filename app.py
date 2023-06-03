@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 import sklearn
 
-df = pd.read_csv("Electric Station Data.csv")
+df = pd.read_csv("Data.csv")
 forest = open('power.pkl','rb')
 model = pickle.load(forest)
 st.title(':green[ELECTRICITY GENERATION PREDICTOR]')
