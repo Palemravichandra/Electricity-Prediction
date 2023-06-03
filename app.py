@@ -21,7 +21,7 @@ if select == 'STANDARD PARAMETERS':
         #st.text(" ")
         st.subheader(':violet[PRESSURE]')
         Pressure = st.selectbox('Select Pressure',df['Pressure'].unique())
-     with col2:
+    with col2:
         st.subheader(':violet[HUMIDITY]')
         Humidity = st.selectbox('Select Humidity',df['Humidity'].unique())
         st.subheader(':violet[TEMPERATURE DIFFERENCE]')
@@ -29,7 +29,7 @@ if select == 'STANDARD PARAMETERS':
         #st.text(" ")
         st.subheader(':violet[PRESSURE DIFFERENCE]')
         PressureDiff = st.selectbox('Select Pressure Difference',df['PressureDiff'].unique())
-     with col3:
+    with col3:
         st.subheader(':violet[POWER PER FUEL]')
         PowerPerFuel = st.selectbox('Select Power Per Fuel',df['PowerPerFuel'].unique())
         st.text(" ")
@@ -56,7 +56,7 @@ else:
         Pressure = st.text_input('Enter Pressure')
         if Pressure:
             Pressure=int(Pressure)
-     with col2:
+    with col2:
         st.subheader(':violet[HUMIDITY]')
         Humidity = st.text_input('Enter Humidity')
         if Humidity:
@@ -70,7 +70,7 @@ else:
         PressureDiff = st.text_input('Enter Pressure Difference')
         if PressureDiff:
             PressureDiff=int(PressureDiff)
-     with col3:
+    with col3:
         st.subheader(':violet[POWER PER FUEL]')
         PowerPerFuel = st.text_input('Enter Power Per Fuel')
         if PowerPerFuel:
