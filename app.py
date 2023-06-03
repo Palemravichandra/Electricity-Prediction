@@ -35,11 +35,11 @@ if select == 'STANDARD PARAMETERS':
         PowerPerFuel = st.selectbox('Select Power Per Fuel',df['PowerPerFuel'].unique())
         st.text(" ")
         st.text(" ")
-        submit=st.button('SUBMIT')
+    submit=st.button('SUBMIT')
     if submit:
         y = np.array([[Temp, Vacuum, Pressure, Humidity, TempDiff,PressureDiff,PowerPerFuel]])
         new = model.predict(y)
-        st.write(":green[ELECTRICAL POWER OUTPUT IS]",round(new[0]),'KWH')
+        st.write(":green[ELECTRICAL POWER OUTPUT IS]",round(new[0]),"KWH")
 else:
     col1, col2,col3 = st.columns(3)
     with col1:
@@ -80,11 +80,11 @@ else:
         st.text(" ")
         st.text(" ")
         st.text(' ')
-        submit = st.button('SUBMIT')
+    submit = st.button('SUBMIT')
     if submit:
         y = np.array([[Temp, Vacuum, Pressure, Humidity, TempDiff, PressureDiff, PowerPerFuel]])
         new = model.predict(y)
-        st.write("## :green[ELECTRICAL POWER OUTPUT IS]", round(new[0]),'KWH')
+        st.write("## :green[ELECTRICAL POWER OUTPUT IS]", round(new[0]),"KWH")
 
 st.write( f'<h5 style="color:rgb(0, 153, 153,0.35);">App Created by RAVI CHANDRA PALEM </h5>', unsafe_allow_html=True )
 
