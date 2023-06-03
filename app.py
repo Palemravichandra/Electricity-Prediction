@@ -4,8 +4,10 @@ import pandas as pd
 import numpy as np
 import sklearn
 
-df = pickle.load(open('df.pkl','rb'))
-model = pickle.load(open('power.pkl','rb'))
+model1 = open('df.pkl','rb')
+df=pickle.load(model1)
+forest = open('power.pkl','rb')
+model = pickle.load(forest)
 st.title(':green[ELECTRICITY GENERATION PREDICTOR]')
 view = ['STANDARD PARAMETERS','PREDICTION PARAMETERS']
 select = st.radio('Select Parameters',view)
