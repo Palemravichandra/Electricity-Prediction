@@ -39,7 +39,7 @@ if select == 'STANDARD PARAMETERS':
     if submit:
         y = np.array([[Temp, Vacuum, Pressure, Humidity, TempDiff,PressureDiff,PowerPerFuel]])
         new = model.predict(y)
-        st.write(":green[ELECTRICAL POWER OUTPUT IS]",round(new[0]),"KWH")
+        st.write("## :green[ELECTRICAL POWER OUTPUT IS]",round(new[0]),"KWH")
 else:
     col1, col2,col3 = st.columns(3)
     with col1:
