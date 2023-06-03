@@ -38,7 +38,7 @@ if select == 'STANDARD PARAMETERS':
         if submit:
             y = np.array([[Temp, Vacuum, Pressure, Humidity, TempDiff,PressureDiff,PowerPerFuel]])
             new = model.predict(y)
-            st.write("## : green[ELECTRICAL POWER OUTPUT IS]",round(new[0]))
+            st.write("## :green[ELECTRICAL POWER OUTPUT IS]",round(new[0]))
 else:
     col1, col2,col3= st.columns(3)
     with col1:
@@ -81,6 +81,6 @@ else:
         if submit:
             y = np.array([[Temp, Vacuum, Pressure, Humidity, TempDiff, PressureDiff, PowerPerFuel]])
             new = model.predict(y)
-            st.write("## : green[ELECTRICAL POWER OUTPUT IS]", round(new[0]))
+            st.write("## :green[ELECTRICAL POWER OUTPUT IS]", round(new[0]))
 
 st.write( f'<h5 style="color:rgb(0, 153, 153,0.35);">App Created by RAVI CHANDRA PALEM </h5>', unsafe_allow_html=True )
