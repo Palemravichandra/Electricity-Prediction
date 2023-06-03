@@ -47,12 +47,12 @@ else:
         Temp = st.text_input('Enter Temperature')
         if Temp:
             Temp=float(Temp)
-        st.text(" ")
+        #st.text(" ")
         st.subheader(':violet[VACUUM]')
         Vacuum = st.text_input('Enter Vacuum')
         if Vacuum:
             Vacuum=float(Vacuum)
-        st.text(" ")
+        #st.text(" ")
         st.subheader(':violet[PRESSURE]')
         Pressure = st.text_input('Enter Pressure')
         if Pressure:
